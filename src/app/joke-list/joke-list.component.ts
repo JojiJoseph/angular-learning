@@ -1,3 +1,4 @@
+// joke-list.component.ts
 import { Component, OnInit } from '@angular/core';
 import { Joke } from '../joke';
 
@@ -7,7 +8,7 @@ import { Joke } from '../joke';
   styleUrls: ['./joke-list.component.css']
 })
 export class JokeListComponent implements OnInit {
-  
+
   jokes: Joke[];
   constructor() {
       this.jokes = [
@@ -19,8 +20,13 @@ export class JokeListComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   addJoke(joke) {
       this.jokes.unshift(joke);
+  }
+
+  deleteJoke(index) {
+    console.log(index);
+    this.jokes.splice(index, 1);
   }
 }
