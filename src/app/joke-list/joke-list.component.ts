@@ -25,7 +25,6 @@ export class JokeListComponent implements OnInit {
   }
 
   deleteJoke(index) {
-    console.log(index);
     this.jokes.splice(index, 1);
   }
 }
