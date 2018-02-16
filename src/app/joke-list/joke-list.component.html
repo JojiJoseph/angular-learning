@@ -1,4 +1,3 @@
-// joke-list.component.html
 <app-joke-form (jokeCreated)="addJoke($event)">
 </app-joke-form>
 <app-joke *ngFor="let j of jokes;let index=index" [joke]="j" (onDelete)="deleteJoke(index)"></app-joke>

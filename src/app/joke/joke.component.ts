@@ -1,4 +1,3 @@
-// joke.component.ts
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Joke } from '../joke';
 

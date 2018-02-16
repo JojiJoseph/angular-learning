@@ -1,4 +1,3 @@
-// joke-list.component.ts
 import { Component, OnInit } from '@angular/core';
 import { Joke } from '../joke';
 
